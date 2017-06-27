@@ -1,3 +1,9 @@
+!Backspace::Send, ^{Backspace}
+return
+
+!f::Send, ^f
+return
+
 !v::Send, ^v
 return
 
