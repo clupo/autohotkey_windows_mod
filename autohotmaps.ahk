@@ -1,3 +1,5 @@
+^SPACE::  Winset, Alwaysontop, , A
+
 !Space::Send, ^{space}
 return
 
