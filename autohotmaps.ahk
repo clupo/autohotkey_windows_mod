@@ -1,9 +1,9 @@
-^SPACE::  Winset, Alwaysontop, , A
+^+SPACE::  Winset, Alwaysontop, , A
 
 !Space::Send, ^{space}
 return
 
-!+q::Send, ^+q
+!q::Send, ^q
 return
 
 !r::Send, ^r
