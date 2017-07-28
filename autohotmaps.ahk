@@ -1,3 +1,6 @@
+!+,::Send, ^+,
+return
+
 ^+SPACE::  Winset, Alwaysontop, , A
 
 !Space::Send, ^{space}
