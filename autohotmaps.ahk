@@ -1,3 +1,20 @@
+; http://irisclasson.com/2015/02/17/horizontal-scroll-in-visual-studio-or-other-programs-with-autohotkey/
+~Shift & WheelUp::
+scroll(0)
+return
+
+~Shift & WheelDown::
+scroll(1)
+return
+
+scroll(direction)
+{
+	SetTitleMatchMode, 2
+	ControlGetFocus, fcontrol, Visual Studio
+	Loop 40
+	SendMessage, 0x114, %direction%, 0, %fcontrol%, Visual Studio
+}
+
 ^d::Send, !d
 return
 
@@ -220,9 +237,9 @@ return
     ; .setGoToPreviousDesktop("Capslock & q")
     ; .setMoveWindowToNextDesktop("Capslock & s")
     ; .setMoveWindowToPreviousDesktop("Capslock & a")
-    ~ .followToDesktopAfterMovingWindow(true)
-	~ .setCloseDesktop("Capslock & x")
-	~ .setNewDesktop("Capslock & n")
+    ; ~ .followToDesktopAfterMovingWindow(true)
+	; ~ .setCloseDesktop("Capslock & x")
+	; ~ .setNewDesktop("Capslock & n")
 
 ; return
 
